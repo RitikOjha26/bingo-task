@@ -1,0 +1,130 @@
+.header{
+    background-color: #3b5d50;
+    padding:0px 20px;
+}
+.header-containter{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: inherit;
+    justify-content:space-between;
+}
+
+.navlinks-containter{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 100px;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    padding-left: 45px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-links_indi {
+    position: relative; 
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.15s ease-in-out;
+}
+
+.nav-links_indi::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 5px;
+    background-color: orange; 
+    transition: width 0.4s ease-in-out; 
+}
+
+.nav-links_indi:hover::after {
+    width: 100%; 
+}
+
+.nav-links_indi:hover {
+    color: white; 
+}
+
+
+
+.navlinks-profile{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navlinks-profile li{
+    margin-right: 20px;
+    
+}
+.nav-toggle {
+    display: none; 
+}
+
+@media screen and (max-width: 490px) {
+    .header-containter {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5px;
+    }
+
+    .navlinks-containter {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    .nav-links_indi {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: start;
+        transition: none;
+    }
+    
+
+    .navlinks-profile {
+      
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navlinks-profile li {
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+}

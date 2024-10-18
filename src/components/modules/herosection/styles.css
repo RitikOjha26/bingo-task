@@ -1,0 +1,103 @@
+.herosection-container{
+    width: 100vw;
+    background-color: #3b5d50;
+}
+.hero-section{
+    height: 50vh;
+    width: 1320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(8rem - 30px) 0 8rem 0;
+    margin: 0px 85px;
+}
+.hero-section_motto{
+    display: flex;
+    flex-direction: column;
+    align-self:flex-start;
+    width: 35%;
+}
+
+.hero-section_showcase{
+    width: auto;
+   
+}
+
+.hero-section_couch{
+    height: auto;
+    max-width: 780px;
+    z-index: 2;
+    position: relative;
+    left: 300px;
+
+}
+.hero-section_dots{
+    position: relative;
+    bottom: 1000px;
+}
+
+.intro{
+    color: white;
+}
+.intro h1{
+    font-size: 54px;
+    
+}
+.intro p{
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+.btn{
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    width: 40%;
+    margin: 10px;
+    height: 50px;
+    size: 16px;
+    
+}
+
+.btn-shop{
+    
+    background-color: #f9bf29;
+    border-color: none;
+    border-width: 0px;
+    
+}
+.btn-explore {
+    background: transparent;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-explore:hover {
+    
+   
+    border-color: white; 
+    
+}
+@media  screen and (max-width:490px) {
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section_motto{
+        width: 100%;
+        padding: 0px 10px;
+        
+    }
+    .intro{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .intro h1{
+        font-size: 32px;
+    }
+    
+}
