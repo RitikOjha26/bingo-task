@@ -114,6 +114,7 @@
     .product-list{
         display: flex;
         flex-direction: column;
+        padding-top: 50px;
     }
     
 }
