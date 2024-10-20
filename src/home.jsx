@@ -11,11 +11,11 @@ const home = () => {
   return (
     <div>
         <Herosection />
-       <ProductListing />
-          <WhyUs />
-        {/*<WeHelpYou/>
+        <ProductListing />
+        <WhyUs />
+        <WeHelpYou/>
         <Testimonials/>
-        <RecentBlogs/> */}
+        <RecentBlogs/>
     </div>
   )
 }

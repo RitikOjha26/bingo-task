@@ -15,7 +15,7 @@ const index = () => {
             <button className='btn btn-primary btn-white-outline'>Explore</button>
           </div>
       </div>
-      <div className="hero-image">
+      <div className="hero-img">
         <img src={couch} alt="" />
       </div>
     </div>

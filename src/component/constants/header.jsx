@@ -51,11 +51,11 @@ const Header = () => {
           
             
           
-          <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={toggleActiveClass}>
+          <section className={`hamburger ${isActive ? 'active' : ''}`} onClick={toggleActiveClass}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
-          </div>
+          </section>
         </nav>
       
     </div>

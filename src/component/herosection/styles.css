@@ -30,18 +30,18 @@
     right: 0px;
     z-index: 2;
     max-width: 780px;
-    left: -20px;
+    left: -15px;
 }
 
 .hero-img:after {
     content: "";
     position: absolute;
-    width: 255px;
+    width: 245px;
     height: 217px;
     background-image: url('../assets/dots-light.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    right: -100px;
+    right: -70px;
     top: 0px;
 }
 
@@ -105,14 +105,28 @@
 
 @media (max-width: 1024px) {
     .hero-img img {
-        left: 0px;
+        left: 110px;
         top: -80px;
-        position: absolute;
+        position: relative;
         right: -50px;
+    }
+    .motto{
+        width: 50%;
+    }
+    .motto h1{
+        
+        font-size: 36px;
+        line-height: 1.2;
     }
 }
 
 @media (max-width: 450px) {
+    .hero-img img{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        left: 00px;
+    }
     .herosection{
         display: flex;
         flex-direction: column;
@@ -127,8 +141,5 @@
         font-size: 28px;
         line-height: 38px;
     }
-    .hero-img img {
-        right: 0px;
-        left: -300px;
-    }
+    
 }
