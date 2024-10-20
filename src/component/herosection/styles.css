@@ -1,0 +1,134 @@
+.herosection{
+    display: flex;
+    justify-content: space-between;  
+    height: 70vh;
+    background-color: var(--main-green);
+    max-width: 100vw;
+    padding: 10px 50px;
+}
+
+.motto{
+    width: 35%;
+}
+
+.motto h1{
+    color: white;
+    line-height: 65px;
+}
+
+.motto p{
+    color: var(--text-light);
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img img {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    max-width: 780px;
+    left: -20px;
+}
+
+.hero-img:after {
+    content: "";
+    position: absolute;
+    width: 255px;
+    height: 217px;
+    background-image: url('../assets/dots-light.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -100px;
+    top: 0px;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 12px 30px;
+    margin: 5px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #2f2f2f;
+    border-color: #2f2f2f;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background: #292929; 
+    border-color: #292929;
+}
+
+.btn:active, .btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn.btn-primary {
+    background: #3b5d50;
+    border-color: #3b5d50;
+}
+
+.btn.btn-primary:hover {
+    background: #354f47; 
+    border-color: #354f47; 
+}
+
+.btn.btn-secondary {
+    color: #2f2f2f;
+    background: #f9bf29;
+    border-color: #f9bf29 !important;
+    border-width: 0px;
+}
+
+.btn.btn-secondary:hover {
+    background: #e5b027;
+    border-color: #e5b027; 
+}
+
+.btn.btn-white-outline {
+    background: transparent;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn.btn-white-outline:hover {
+    border-color: rgba(255, 255, 255, 1);
+    color: #ffffff;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .hero-img img {
+        left: 0px;
+        top: -80px;
+        position: absolute;
+        right: -50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .herosection{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        
+    }
+    .motto{
+        width: 100%;
+    }
+    .motto h1{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .hero-img img {
+        right: 0px;
+        left: -300px;
+    }
+}
